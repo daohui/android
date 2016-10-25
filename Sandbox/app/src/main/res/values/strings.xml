@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Sandbox</string>
     <string name="demos_title">Demos....</string>
-    <string name="drawing">Drawing...</string>
+    <string name="drawing">Draw lines inside the box below...</string>
 </resources>
