@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         demos = new Demo[]{
                 new Demo("Hello Demo", HelloActivity.class),
+                new Demo("Address Location (Demo to use available services", AddressLocatorActivity.class),
                 new Demo("Drawing Demo", DrawActivity.class)
         };
 

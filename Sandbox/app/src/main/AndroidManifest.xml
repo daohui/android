@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".HelloActivity" />
         <activity android:name=".DrawActivity" />
+        <activity android:name=".AddressLocatorActivity"></activity>
     </application>
 
 </manifest>
