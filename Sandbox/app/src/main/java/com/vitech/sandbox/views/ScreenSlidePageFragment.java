@@ -36,6 +36,18 @@ public class ScreenSlidePageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+        if (pageNumber == 0) {
+            return createDrawing(inflater, container);
+        }
+        return createScreenSlider(inflater, container);
+    }
+
+    private View createDrawing(LayoutInflater inflater, ViewGroup container) {
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.activity_draw, container, false);
+        return rootView;
+    }
+
+    private View createScreenSlider(LayoutInflater inflater, ViewGroup container) {
         ViewGroup rootView = (ViewGroup) inflater
                 .inflate(R.layout.viewpager__screen_slider, container, false);
 
@@ -44,5 +56,6 @@ public class ScreenSlidePageFragment extends Fragment {
                 getString(R.string.screenslide__title_template_step, pageNumber + 1));
 
         return rootView;
+
     }
 }
