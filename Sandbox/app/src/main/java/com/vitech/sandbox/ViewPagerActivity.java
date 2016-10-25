@@ -10,6 +10,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.vitech.sandbox.views.ScreenSlidePageFragment;
+
 public class ViewPagerActivity extends AppCompatActivity {
     private static final int NUM_PAGES = 3;
 
@@ -54,7 +56,7 @@ public class ViewPagerActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            return null;
+            return ScreenSlidePageFragment.create(position);
         }
 
         @Override
