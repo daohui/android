@@ -56,6 +56,5 @@ public class ScreenSlidePageFragment extends Fragment {
                 getString(R.string.screenslide__title_template_step, pageNumber + 1));
 
         return rootView;
-
     }
 }

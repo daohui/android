@@ -10,13 +10,16 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
+import com.vitech.sandbox.views.CustomViewPager;
 import com.vitech.sandbox.views.ScreenSlidePageFragment;
 
 public class ViewPagerActivity extends AppCompatActivity {
     private static final int NUM_PAGES = 3;
 
-    private ViewPager pager;
+    private CustomViewPager pager;
     private PagerAdapter pagerAdapter;
 
     @Override
@@ -24,7 +27,16 @@ public class ViewPagerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pager);
 
-        pager = (ViewPager) findViewById(R.id.viewpager);
+        pager = (CustomViewPager) findViewById(R.id.viewpager);
+        pager.setSwipingEnabled(false);  // start first page (not selected)
+        pager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener(){
+            @Override
+            public void onPageSelected(int position) {
+                Log.d("ViewPagerActivity", "onPageSelected: " + position);
+                pager.setSwipingEnabled(position!=0);  // disable swiping on first page
+                super.onPageSelected(position);
+            }
+        } );
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         pager.setAdapter(pagerAdapter);
         pager.addOnPageChangeListener(
