@@ -15,13 +15,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HelloActivity" />
-        <activity android:name=".DrawActivity" />
-        <activity android:name=".AddressLocatorActivity" />
-        <activity android:name=".ViewPagerActivity" />
+        <activity android:name=".activies.HelloActivity" />
+        <activity android:name=".activies.DrawActivity" />
+        <activity android:name=".activies.AddressLocatorActivity" />
+        <activity android:name=".activies.ViewPagerActivity" />
         <!--  prevent ActionBar provide the app bar -->
-        <activity android:name=".MenuDemoActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activies.MenuDemoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:parentActivityName=".MainActivity">
+            <!-- backward compatible to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

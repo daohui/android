@@ -1,16 +1,15 @@
-package com.vitech.sandbox;
+package com.vitech.sandbox.activies;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.vitech.sandbox.views.DrawingView;
+import com.vitech.sandbox.R;
 
-public class DrawActivity extends AppCompatActivity {
+public class HelloActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_draw);
-
+        setContentView(R.layout.demo__activity_hello);
     }
 }

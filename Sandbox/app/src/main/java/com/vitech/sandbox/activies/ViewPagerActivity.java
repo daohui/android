@@ -1,4 +1,4 @@
-package com.vitech.sandbox;
+package com.vitech.sandbox.activies;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.vitech.sandbox.R;
 import com.vitech.sandbox.views.CustomViewPager;
 import com.vitech.sandbox.views.ScreenSlidePageFragment;
 

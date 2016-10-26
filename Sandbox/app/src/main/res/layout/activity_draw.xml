@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.vitech.sandbox.DrawActivity">
+    tools:context="com.vitech.sandbox.activies.DrawActivity">
     <TextView
         android:text="@string/drawing"
         android:layout_width="match_parent"

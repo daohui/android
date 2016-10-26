@@ -1,4 +1,4 @@
-package com.vitech.sandbox;
+package com.vitech.sandbox.activies;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.vitech.sandbox.R;
 
 import java.util.List;
 
