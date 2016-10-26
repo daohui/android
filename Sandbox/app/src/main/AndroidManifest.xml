@@ -18,7 +18,10 @@
         <activity android:name=".HelloActivity" />
         <activity android:name=".DrawActivity" />
         <activity android:name=".AddressLocatorActivity" />
-        <activity android:name=".ViewPagerActivity"></activity>
+        <activity android:name=".ViewPagerActivity" />
+        <!--  prevent ActionBar provide the app bar -->
+        <activity android:name=".MenuDemoActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

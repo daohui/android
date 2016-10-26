@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
                 new Demo("Hello Demo", HelloActivity.class),
                 new Demo("Address Location (Demo to use available services", AddressLocatorActivity.class),
                 new Demo("Drawing Demo", DrawActivity.class),
-                new Demo("ViewPager Demo", ViewPagerActivity.class)
+                new Demo("ViewPager Demo", ViewPagerActivity.class),
+                new Demo("Menu Demo", MenuDemoActivity.class)
         };
 
         ListView listView = (ListView) findViewById(R.id.demo_list);
